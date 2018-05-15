@@ -8,7 +8,9 @@ requirements:
     - python
     - cython >=0.18
     - setuptools >=6.0
-    - numpy 1.10  # we build against the oldest supported version
+    # we build against the oldest supported numpy version
+    - numpy 1.10  # [not py36]
+    - numpy 1.11  # [py36]
 
   run:
     - python
